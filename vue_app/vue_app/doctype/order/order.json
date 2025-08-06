@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "OID-.#####",
+ "creation": "2025-06-12 15:44:14.981126",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_o4ee",
+  "customer",
+  "shipping_address",
+  "column_break_jizp",
+  "amended_from",
+  "status",
+  "section_break_pvxx",
+  "order_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_o4ee",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "order_items",
+   "fieldtype": "Table",
+   "label": "Order Items",
+   "options": "Order Items",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jizp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pvxx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Placed",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Placed\nShipped\nDelivered",
+   "sort_options": 1
+  },
+  {
+   "fieldname": "shipping_address",
+   "fieldtype": "Small Text",
+   "label": "Shipping Address",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-16 12:01:29.081576",
+ "modified_by": "Administrator",
+ "module": "Vue App",
+ "name": "Order",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
